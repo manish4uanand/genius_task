@@ -1,0 +1,18 @@
+<div class="" style="margin-top:40px;">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Logged-In Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @login_details.each do |ld| %>
+			<tr>
+				<td><%= ld.user.username %></td>
+				<td><%= ld.login_time %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

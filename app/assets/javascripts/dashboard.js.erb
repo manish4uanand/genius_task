@@ -1,0 +1,9 @@
+$(document).ready(function() {
+    setInterval(function() {
+        $('.main-time-portion').load('/dashboard/give_time');
+    }, 1000);
+});
+
+$(document).on('click', ".main-time-portion", function(){
+	$(".main-time-portion").addClass("disabled");
+});

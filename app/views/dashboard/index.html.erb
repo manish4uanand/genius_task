@@ -1,0 +1,15 @@
+<div class="row" style="margin-top:20px;">
+	<div class="col-sm-12 row">
+		<div class="col-sm-4">
+			Please Login your time by clicking on Clock
+		</div>
+		<div class="col-sm-8">
+			<% unless current_user.email == "admin@gmail.com" %>
+				<%= render :partial => 'shared/time_portion' %>	
+			<% end %>	
+		</div>
+	</div>
+</div>
+<div id="login_time_listing">
+	<%= render :partial=>"punch_login_time_listing" %>
+</div>
