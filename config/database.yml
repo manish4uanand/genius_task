@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  # username: root
+  # password:
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -52,3 +52,11 @@ production:
   database: genius_task_production
   username: genius_task
   password: <%= ENV['GENIUS_TASK_DATABASE_PASSWORD'] %>
+
+
+default: &default
+ adapter: postgresql
+ encoding: unicode
+ # For details on connection pooling, see rails configuration guide
+ # http://guides.rubyonrails.org/configuring.html#database-pooling
+ pool: 5
