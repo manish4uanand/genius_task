@@ -68,7 +68,9 @@ gem 'rolify'
 gem 'mailcatcher'
 gem 'annotate'
 
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'pg'
-end
+# gem 'pg','0.21.0' :group => [:development, :test]
+# group :production do
+#   gem 'pg', '0.21.0'
+# end
+
+gem 'pg', '~> 0.21.0'
