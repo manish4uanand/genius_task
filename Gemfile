@@ -67,3 +67,8 @@ gem 'rolify'
 
 gem 'mailcatcher'
 gem 'annotate'
+
+gem 'sqlite3', :group => [:development, :test]
+group :production do
+  gem 'pg'
+end
