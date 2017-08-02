@@ -65,10 +65,9 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem 'rolify'
 
-gem 'mailcatcher'
+# gem 'mailcatcher'
 gem 'annotate'
 
-group :production do
-   gem 'pg'
-end
+
+gem 'pg'
 
